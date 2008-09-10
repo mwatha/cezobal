@@ -1,0 +1,59 @@
+/*
+--------------------------------------------------
+{$company_name} - Screen master styles
+Author: James Hill, SonicIQ - [soniciq.com]
+-------------------------------------------------- */
+
+@import url(base.css);
+@import url(local.css);
+
+/* = Basic styles
+----------------------------------------------- */
+a img {
+	border-width: 0;
+	border-style: none;
+}
+th, td {
+  text-align: left;
+  vertical-align: top;
+}
+
+h1{
+ font-size:60px;
+}
+
+#footer{
+ display:none;
+}
+
+.typo_date{
+ display:none;
+}
+
+.date{
+ display:none;
+}
+
+.meta {
+ display:none;
+}
+
+.featured{
+  display:none;
+}
+
+
+.primary h1{
+  display:none;
+}
+
+.secondary h2{
+  display:none;
+}
+
+
+/* = Mid-pass filter
+----------------------------------------------- */
+@media tty {
+ i{content:"\";/*" "*/}} @import 'ie5win.css'; /*";}
+}/* */

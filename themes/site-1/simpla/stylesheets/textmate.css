@@ -1,0 +1,119 @@
+/* Stylesheet generated from TextMate theme
+ *
+ * Sunburst
+ * (c) Soryu, 2005
+ *
+ */
+
+pre.textmate-source {
+	padding: 0px 0px 16px 0px;
+}
+
+pre.textmate-source.sunburst {
+	color: #F8F8F8;
+	background-color: #000;
+}
+
+pre.textmate-source .linenum {
+	padding: 0.1em 0.5em 0.2em 0;
+	color: #333;
+	background-color: #111;
+}
+pre.textmate-source.sunburst span {
+   padding-top: 0.2em;
+   padding-bottom: 0.1em;
+}
+pre.textmate-source.sunburst ::selection {
+	background-color: rgba(221, 240, 255, 0.25);
+}
+/* Comment */
+pre.textmate-source.sunburst .comment {
+	color: #AEAEAE;
+}
+
+/* Constant */
+pre.textmate-source.sunburst .constant {
+	color: #3387CC;
+}
+
+/* Entity */
+pre.textmate-source.sunburst .entity {
+	color: #89BDFF;
+}
+
+/* Keyword */
+pre.textmate-source.sunburst .keyword {
+	color: #E28964;
+}
+
+/* Storage */
+pre.textmate-source.sunburst .storage {
+	color: #99CF50;
+}
+
+/* String */
+pre.textmate-source.sunburst .string {
+	color: #65B042;
+}
+
+/* Support */
+pre.textmate-source.sunburst .support {
+	color: #9B859D;
+}
+
+/* Variable */
+pre.textmate-source.sunburst .variable {
+	color: #3E87E3;
+}
+
+/* Invalid – Deprecated */
+pre.textmate-source.sunburst .invalid_deprecated {
+	color: #FD5FF1;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+/* Invalid – Illegal */
+pre.textmate-source.sunburst .invalid_illegal {
+	color: #FD5FF1;
+	background-color: rgba(86, 45, 86, 0.75);
+}
+
+/* ♦ Embedded Source (Bright) */
+pre.textmate-source.sunburst .text .source {
+	background-color: rgba(177, 179, 186, 0.03);
+}
+
+/* ♦ Entity inherited-class */
+pre.textmate-source.sunburst .entity_other_inherited-class {
+	color: #9B5C2E;
+	font-style: italic;
+}
+
+/* ♦ String embedded-source */
+pre.textmate-source.sunburst .string_quoted .source {
+	color: #DAEFA3;
+}
+
+/* ♦ String constant */
+pre.textmate-source.sunburst .string .constant {
+	color: #DDF2A4;
+}
+
+/* ♦ String.regexp */
+pre.textmate-source.sunburst .string_regexp {
+	color: #E9C062;
+}
+
+/* ♦ String.regexp.«special» */
+pre.textmate-source.sunburst .string_regexp .constant_character_escape, pre.textmate-source.sunburst .string_regexp .source_ruby_embedded, pre.textmate-source.sunburst .string_regexp .string_regexp_arbitrary-repitition {
+	color: #CF7D34;
+}
+
+/* ♦ String variable */
+pre.textmate-source.sunburst .string .variable {
+	color: #8A9A95;
+}
+
+
+

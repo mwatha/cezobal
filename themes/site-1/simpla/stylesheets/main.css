@@ -1,0 +1,239 @@
+/*  
+Theme Name: Sharp000
+Theme URI: http: //dairon.net
+Description: Low-light eye-relaxing theme
+Version: 1.00
+Author: dairon
+Based on Simpla theme by Phu Ly
+*/
+
+/*************************************/
+body {
+	background: #000 url(../images/bg-bg.png) repeat-x;
+	color: #555;
+	font-family: Verdana, sans-serif;
+	font-size: 11pt;
+	line-height: 1.4;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+#wrap {
+	margin: 0 auto;
+	text-align: left;
+	width: 950px;	
+}
+#content {
+/*	font-size: 1.5em;*/
+	float: left;
+	padding: 1em;
+	width: 640px;
+}
+#sidebar {
+/*	font-size: 1.5em;*/
+	float: right;
+	padding-top: 1.1em;
+	width: 245px;
+}
+#header {
+	padding: 3em 1em;
+	background: url(../images/bg-header.png) bottom repeat-x;
+}
+#footer {
+	background-color: #222;
+	border-top: 2px solid #333;
+	clear: both;
+	padding: 0.5em;
+}
+
+/*************************************/
+img {
+  border: 0;
+}
+h1, h2, h3 {
+	font-family: Tahoma, Verdana, sans-serif;
+	font-weight: normal;
+	margin: 0;
+}
+blockquote {
+  color: #333;
+  font-style: italic;
+  border-left: dotted 3px #222;
+  margin: 8px 0px 8px 16px;
+  padding: 0px 0px 0px 16px;
+}
+a {
+	color: #6F6F9F;
+	text-decoration: none;
+}
+a:hover {
+	background-color: #222;
+	text-decoration: underline;
+}
+pre {
+	margin: 0;
+	font-family: Monaco, 'Courier New';
+	font-size: 11px;
+	line-height: 1.3em;
+  color: #f8f8f8;
+	background-color: #000;
+	border-left: solid 2px #111;
+	border-right: dotted 2px #111;
+	padding: 0.5em 1em;
+  overflow: auto;
+}
+.right {
+  float: right;
+}
+
+/* header */
+/*************************************/
+#header #right {
+  float: right;
+  margin-top: 11pt;
+  text-align: center;
+}
+#header #right img {
+  margin-bottom: 0.5em;
+}
+#header h1 {
+	font-family: Tahoma;
+	font-size: 22pt;
+	margin: 0;
+	margin-right: 1em;
+	letter-spacing: -1px;
+}
+#header h1 a {
+	color: #9f9fcf;
+}
+#header p {
+	color: #aaa;
+	font-family: Monaco, Courier;
+	margin: 0;
+	margin-top: -6px;
+}
+
+/* entry */
+/*************************************/
+.entrytitle {
+	background: #000 url(../images/bg-entrytitle.png) right top no-repeat;
+}
+.entrytitle h2 {
+	font-size: 16pt;
+}
+.entrytitle h2 a {
+ 	color: #E87830;
+}
+.entrytitle h3 {
+	font-size: 13pt;
+	color: #a4b23B;
+}
+.entry {
+	margin-bottom: 3em;
+}
+.entrybody {
+  margin-bottom: 1em;
+}
+.entrymeta1 {
+	font-size: 10pt;
+	margin-top: -4px;
+}
+.entrymeta2 {
+	font-size: 10pt;
+	padding-bottom: 1.5em;
+	background: url(../images/bg-header.png) bottom repeat-x;
+}
+
+/* sidebar */
+/*************************************/
+#sidebar h2 {
+	color: #555;
+	font-size: 14pt;
+}
+#sidebar ul {
+	list-style-type: none;
+	margin: 0 0 4em 0;
+	padding: 0;
+}
+#sidebar ul li {
+	border-bottom: 2px dotted #333;
+	margin-bottom: 0.3em;
+	padding: 4px 12px;
+/*	text-align: right;*/
+}
+#sidebar ul li.head {
+  font-size: 14pt;
+	background: url(../images/bg-header.png) bottom repeat-x;
+}
+#sidebar p {
+	margin: 0;
+	padding: 0.3em 1em;
+	text-align: left;
+}
+#sform {
+  margin-bottom: 3em;
+}
+#sform input {
+	color: #999;
+	padding: 2px 4px;
+	font-size: 11pt;
+	border: 2px solid #555;
+	background-color: #222;
+}
+#sform input:focus {
+	color: #999;
+	border: 2px solid #777;
+	background-color: #333;
+}
+
+/* comments */
+/*************************************/
+.commentsblock {
+  margin-left: 1em;
+}
+.commentsblock textarea {
+	width: 500px;
+}
+.commentsblock input, .commentsblock textarea {
+  font-family: Verdana, sans-serif;
+  font-size: 11pt;
+  padding: 2px 4px;
+	color: #999;
+	border: 2px solid #555;
+	background-color: #222;
+}
+.commentsblock textarea:focus, .commentsblock input:focus {
+	color: #999;
+	border: 2px solid #777;
+	background-color: #333;
+}
+.commentauthor {
+	display: block;
+/*	font-size: 1.2em;*/
+}
+ol.commentlist {
+	color: #555;
+/*	font-size: 1em;*/
+	list-style-type: none;
+	margin: 1.5em 0;
+	padding: 0;
+}
+.commentlist li {
+	margin-bottom: 0.5em;
+	padding: 0.5em 1em;
+}
+.alt {
+	background-color: #111;
+	border: 1px dotted #222;
+	padding: 0.5em;
+}
+h3#comments {
+/*	color: #a4b23B;*/
+ 	color: #E87830;
+/*  font-size: 1.3em;*/
+}
+h3#respond {
+/* 	color: #E87830;*/
+	color: #a4b23B;
+/*  font-size: 1.3em;*/
+}

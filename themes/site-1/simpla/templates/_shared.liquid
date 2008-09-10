@@ -1,0 +1,38 @@
+{% for article in articles %}
+<div class="entry entry-{{ article.id }}">
+	<div class="entrytitle">
+		<h2>{{ article | link_to_article }}</h2> 
+		<h3>{{ article.published_at | format_date: 'mdy', true }}</h3>
+	</div>
+
+	<div class="entrymeta1">
+		Posted by {{ article.author.login }} in {{ article | linked_section_list }}
+	</div>
+
+	<div class="entrybody">
+	  {% if article.excerpt %}
+	    {{ article.excerpt }}
+	    {% unless mode == 'single' %}
+		  <a href="{{ article.url }}">Read the rest of this entry</a>
+		  {% endunless %}
+		{% else %}
+		  {% unless mode == 'single' %}{{ article.body }}{% endunless %}
+		{% endif %}
+		{% if mode == 'single' %}
+		  {{ article.body }}
+		{% endif %}
+	</div>
+	
+	<div class="entrymeta2">
+	{% unless mode == 'single' %}
+	  {% if article.accept_comments %}&nbsp;<a href="{{ article.url }}#comments">{{ article.comments_count | pluralize: 'comments' }}  &#187;</a>{% endif %}
+	{% endunless %}
+	</div>
+	
+</div>
+{% endfor %}
+{% if mode == 'single' %}
+  <div class="commentsblock">
+    {% include 'comments' %}
+  </div>
+{% endif %}

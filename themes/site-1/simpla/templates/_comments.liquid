@@ -1,0 +1,29 @@
+{% if article.comments_count > 0 %}
+	<h3 id="comments">{{ article.comments_count | pluralize: 'Response' }} Follows</h3> 
+	<ol class="commentlist">
+	{% for comment in article.comments %}
+		<li class="{% cycle 'alt', '' %}" id="comment-{{ comment.id }}">
+			<cite>{{ comment.author_link }}</cite> says<br/>
+			<small class="commentmetadata">on <a href="#comment-{{ comment.id }}">{{ comment.created_at | format_date: 'mdy', true }} at {{ comment.created_at | format_date: 'time_only' }}</a></small>
+			{{ comment.body }}
+		</li>
+  {% endfor %}
+	</ol>
+{% endif %}
+
+
+{% if article.accept_comments %}
+
+<br/>
+<h3 id="respond">Your Response</h3>
+{% commentform %}
+  <p>{{ form.name }} <label for="author">Name (required)</label></p>
+  <p>{{ form.email }} <label for="email">Mail (will not be published)</label></p>
+  <p>{{ form.url }} <label for="url">Website</label></p>
+  <p><textarea name="comment[body]" id="comment" cols="100%" rows="10">{{ submitted.body }}</textarea></p>
+  <p><input name="submit" type="submit" id="submit" value="Submit Comment" /></p>
+{% endcommentform %}
+
+{% else %}
+<p>Sorry, comments are closed for this article.</p>
+{% endif %}

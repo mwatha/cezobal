@@ -1,0 +1,312 @@
+/*
+Company:	Nautica 09 - design by www.studio7designs.com - coding by www.slicendiceit.com/ 
+File:		main.css - This contains all the main styles for the website.
+
+All the styles are separted into the following groups:
+Global Browser Reset - they make sure that all browsers start with the same default settings
+HTML, Body - for the html and body tags
+Layout - any style that defines how the site is laid out (position and size of objects)
+Nav - navigation bar
+Headings - headings like h1, h2, etc
+Text Styles - Styles for text
+Lists - unordered and ordered lists
+Forms - html forms
+Links - links
+Misc - anything that doesn't fit elsewhere
+*/
+
+/* @group Global Browser Reset */
+* {
+
+padding:0;
+
+margin:0;
+
+}
+
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, form, label, ul, ol, dl, fieldset, address { margin:20px 0; }
+
+li, dd, blockquote { margin-left: 40px; }
+
+fieldset { padding:10px; }
+
+img { border: 0px; }
+/* @end */
+
+/* @group HTML, Body */
+body {
+	text-align: center;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+}
+/* @end */
+
+/* @group Layout */
+div#outer {
+	width: 702px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+div#header {
+	height: 80px;
+	margin: 10px 0 0 0;
+}
+div#body-top {
+	width: 702px;
+	height: 48px;
+	background: url(../images/body-top.gif) no-repeat;
+	overflow: hidden;
+}
+div#body-middle {
+	width: 702px;
+	padding: 1px 0;
+	background: url(../images/body-middle.gif) repeat-y;
+}
+div#body-bottom {
+	width: 702px;
+	height: 25px;
+	background: url(../images/body-bottom.gif) no-repeat;
+	overflow: hidden;
+}
+div#main-col {
+	width: 404px;
+	float: left;
+	margin-left: 32px;
+	display: inline;
+}
+div#nameplate-top {
+	width: 404px;
+	height: 8px;
+	background: url(../images/nameplate-top.gif) no-repeat;
+	overflow: hidden;
+}
+div#nameplate-middle {
+	background-color: #c6d8e8;
+	padding: 4px 6px;
+}
+div#nameplate-middle img {
+	float: left;
+	display: inline;
+}
+div#nameplate-middle p {
+	float: right;
+	text-align: right;
+	margin: 0;
+	line-height: 27px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 80%;
+	display: inline;
+}
+div#nameplate-bottom {
+	width: 404px;
+	height: 8px;
+	background: url(../images/nameplate-bottom.gif) no-repeat;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+div#content-top {
+	width: 403px;
+	height: 8px;
+	background: url(../images/content-top.gif) no-repeat;
+	overflow: hidden;
+}
+div#content-wrapper {
+	width: 387px;
+	border-right: 8px solid #c5d6e8;
+	border-left: 8px solid #c5d6e8;
+}
+div#content {
+	background-color: #688ba8;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	padding: 10px 0;
+}
+div#content div {
+	padding: 5px 10px;
+	border-bottom: 1px solid #c5d6e8;
+}
+div#content-bottom {
+	width: 403px;
+	height: 8px;
+	background: url(../images/content-bottom.gif) no-repeat;
+	overflow: hidden;
+}
+div#side-col {
+	width: 221px;
+	float: right;
+	margin-right: 34px;
+	display: inline;
+}
+div.side-box-top {
+	width: 221px;
+	height: 7px;
+	background: url(../images/side-box-top.gif) no-repeat;
+	overflow: hidden;
+}
+div.side-box-middle {
+	width: 221px;
+	background-color: #c6d8e8;
+	padding: 1px 0;
+	text-align: center;
+}
+div.side-box-bottom {
+	width: 221px;
+	height: 7px;
+	background: url(../images/side-box-bottom.gif) no-repeat;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+div#footer {
+	text-align: center;
+	
+}
+
+div#logo {
+	width: 300px;
+	height: 75px;
+	margin: 0 0 5px 0;
+	float: left;
+	display: inline;
+}
+div#login-box {
+	float: right;
+	width: 304px;
+	height: 29px;
+	background: url(../images/login-tab.gif) no-repeat;
+	margin: 51px 10px 0 0;
+	overflow: hidden;
+	display: inline;
+}
+/* @end */
+
+/* @group Nav */
+ul#main-nav {
+	background: url(../images/nav-tabs.gif) no-repeat;
+	height: 27px;
+	margin: 14px 0 0 30px;
+	overflow: hidden;
+}
+ul#main-nav li {
+	float: left;
+	list-style-type: none;
+	width: 139px;
+	margin: 0;
+	text-align: center;
+	line-height: 28px;
+}
+ul#main-nav li#right-tab {
+	margin-left: 83px;
+}
+ul#main-nav a:link, ul#main-nav a:visited {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 120%;
+}
+ul#main-nav a:hover {
+	color: #ccc;
+}
+/* @end */
+
+/* @group Headings */
+h1 {
+	font-size: 120%;
+	font-weight: bold;
+	color: #febb3a;
+	margin: 5px 0;
+}
+h2 {
+	font-size: 120%;
+	font-weight: normal;
+	color: #fff;
+	margin: 5px 0;
+}
+h3 {
+	font-size: 130%;
+	font-weight: normal;
+	color: #92a8bd;
+	margin: 5px 0;
+}
+h4 { }
+h5 { }
+h6 { }
+/* @end */
+
+/* @group Text Styles */
+div#content div p {
+	margin: 10px 0;
+	color: #fff;
+	line-height: 160%;
+}
+div#login-box {
+	color: #fff;
+}
+div#footer {
+	color: #cccccc;
+}
+/* @end */
+
+/* @group Lists */
+	
+/* @end */
+
+/* @group Forms */
+div#login-box form {
+	margin: 5px 0 0 0;
+	text-align: center;
+}
+div#login-box form input {
+	margin: 0;
+	vertical-align: middle;
+}
+div#login-box form input.txt {
+	width: 75px;
+	border: 1px solid #46627c;
+	padding: 2px;
+	height: 12px;
+	line-height: 10px;
+}
+/* @end */
+
+/* @group Links - link visited hover active */
+div#content a:link, div#content a:visited {
+	color: #febb3a;
+	text-decoration: none;
+}
+div#content a:hover {
+	text-decoration: underline;
+}
+
+div#footer a:link, div#footer a:visited {
+	color: #cccccc;
+	text-decoration: none;
+}
+div#footer a:hover {
+	text-decoration: underline;
+}
+/* @end */
+
+/* @group Misc */
+.clear {
+	clear: both;
+}
+
+/* Clearfix Method from: http://www.positioniseverything.net/easyclearing.html */
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+/* @end */

@@ -1,0 +1,47 @@
+<div class="post">
+  <div class="post-title"><h1>{{ article.title }}</h1></div>
+  <p class="auth">Posted by {{ article.author.login }},  
+  <SPAN class="typo_date" title="{{ article.published_at }}">{{ article.published_at }}</SPAN></p>
+  {{ article.excerpt }}
+  {{ article.body }}
+<p class="meta">
+  Filed Under: {% for section in article.sections %} {{ section | link_to_section }} {% endfor %} |
+  Tags: {% for tag in article.tags %}{{ tag | link_to_tag }} {% endfor %}
+</p>
+</div>
+
+<div class="clear"></div>
+
+
+<a name="comments"></a><h4 class="blueblk">Comments</h4> 
+<p class="postmetadata alt">
+  <small><a href="#respond">Leave a response</a></small>
+</p>
+<ol class="comment-list" id="commentList"> 
+{% for comment in article.comments %}
+      <li>
+        <cite>
+          <span class="author">{{ comment.author }}</span>
+          <span class="date">{{ comment.created_at | strftime: '%m.%d.%y / %H%p' }}</span>
+        </cite>
+        <div class="content">
+          {{ comment.body }}
+        </div>
+        <div class="clear"></div>
+      </li>
+{% endfor %}
+</ol>
+
+<div id="comment-form">
+  {% commentform %}
+  <h3 class="formhead">Have your say</h3>
+  <p>A name is required. You may use HTML in your comments.</p>
+  {{ form.name }}<label class="text" for="comment_author">Name (Required)</label><br />
+  {{ form.email }}<label class="text" for="comment_author_email">Email (Required)</label><br />
+  {{ form.url }}<label class="text" for="comment_author_url">Website</label><br />
+  <p>{{ form.body }}</p>
+  <div class="formactions">
+    <input type="submit" value="Post comment" class="submit" />
+  </div>
+  {% endcommentform %}
+</div>
